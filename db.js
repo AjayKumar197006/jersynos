@@ -14,17 +14,7 @@ const con=sql.createConnection(
     }
 )
 
-con.connect(err=>
-{
-    if(err)
-    {
-        console.log(err)
-        return
-    }
-    console.log("connected")
 
-}
-)
 function getAllPlayers()
 {
     return new Promise(function(success,err)
